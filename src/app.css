@@ -1,0 +1,29 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+:where(h2, h3, h4, h5, h6) {
+	.icon-link {
+		position: relative;
+
+		&::before {
+			content: '#';
+			fill: currentColor;
+			position: absolute;
+			left: -2rem;
+			width: 1rem;
+			height: 1rem;
+			top: 0;
+			opacity: 0.2;
+			transition: opacity 0.2s;
+
+			@media (min-width: vars.$smMin) {
+				left: -1.5rem;
+			}
+		}
+
+		&:hover::before {
+			opacity: 1;
+		}
+	}
+}
+@tailwind components;
+@tailwind utilities;
