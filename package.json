@@ -39,6 +39,7 @@
 	"type": "module",
 	"dependencies": {
 		"@sveltejs/adapter-static": "^1.0.0-next.34",
+		"@sveltejs/adapter-vercel": "^1.0.0-next.58",
 		"luxon": "^2.4.0",
 		"svelte-awesome": "^3.0.0"
 	}
